@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 70%;
+  margin: auto;
+}
+
+.head-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h3 {
+  margin-left: 15px;
+}
+
+h3 {
+  color: #ff8c00;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  margin-top: 7px;
+}
+
+.menu ul {
+  text-decoration: none;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.btn button {
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.btn2 button {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.btn2 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+h3 {
+  color: #ff8c00;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  box-sizing: border-box;
+  background-color: rgb(233, 227, 227);
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+.lnavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lnavigation nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.donation img {
+  width: auto;
+  height: 400px;
+}
+
+.donation {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upi img {
+  height: 150px;
+  width: auto;
+}
+
+.tex {
+  text-align: center;
+  justify-content: center;
+}
+
+.upi-id {
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  margin: 30px;
+}
+#home {
+  display: none;
+}
+
+.lnavigation ul {
+
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+}
+
+.hamburger {
+  display: none;
+}
+.close i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+aside a{
+  font-size: 18px;
+}
+aside nav ul{
+  margin-top: 10px;
+  margin-left: 25px;
+
+}
+aside nav li{
+  margin-bottom: 10px;
+  list-style: circle;
+}
+aside{
+  top: 0;
+  transform: translate(-200px);
+  transition: all 0.7s ease-in-out;
+  display: block;
+  background-color: #111;
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  transform: translateX(-200px);
+}
+aside ul li {
+  color: #fff;
+}
+body.hidden{
+  overflow: hidden;
+}
+
+
+@media(max-width:520px) {
+  aside nav ul a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #dev {
+    display: none;
+  }
+
+  #home {
+
+    display: block;
+  }
+  .head-container {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .logo h3 {
+    font-size: 12px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .upi img {
+    height: 100px;
+  }
+  h1{
+    color:#ff8c00;
+    font-size: 20px;
+  }
+  .donation img{
+    height: 310px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .llogo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .llogo h3 {
+    font-size: 12px;
+  }
+
+  footer {
+    box-sizing: border-box;
+  }
+
+  .footer-container p {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .lnavigation nav a {
+    font-size: 12px;
+  }
+}
